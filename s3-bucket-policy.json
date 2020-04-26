@@ -1,0 +1,28 @@
+### let suppose xyz user have full s3 access and we want to restrict delete object from perticular user, use policy generator to create this policy and it will apply on s3 bucket.
+
+
+
+{
+    "Id": "Policy1587831018102",
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Stmt1587831016794",
+        "Action": [
+          "s3:DeleteObject"
+        ],
+        "Effect": "Deny",
+        "Resource": "arn:aws:s3:::tunuu/*",
+        "Principal": {
+          "AWS": [
+            "arn:aws:iam::123570184504:user/rimi"
+          ]
+        }
+      }
+    ]
+  }
+
+
+
+
+

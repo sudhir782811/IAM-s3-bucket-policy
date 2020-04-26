@@ -1,0 +1,23 @@
+## let suppose any user like x user have s3 read only access and we want to provide read and write access on perticular s3 bucket then we create policy with help of policy generator and it also apply on s3 bucket####
+
+{
+
+    "Id": "Policy1587877907533",
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Stmt1587877905389",
+        "Action": [
+          "s3:GetObject",
+          "s3:PutObject"
+        ],
+        "Effect": "Allow",
+        "Resource": "arn:aws:s3:::tunuu/*",
+        "Principal": {
+          "AWS": [
+            "arn:aws:iam::123570184504:user/rimi"
+          ]
+        }
+      }
+    ]
+  }
