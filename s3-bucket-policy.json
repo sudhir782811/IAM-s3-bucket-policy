@@ -1,4 +1,4 @@
-### let suppose xyz user have full s3 access and we want to restrict delete object from perticular user, use policy generator to create this policy and it will apply on s3 bucket.
+### let suppose xyz user have full s3 access and we want to restrict delete object on perticular s3 bucket, use policy generator to create this policy and it will apply on s3 bucket.
 
 
 
